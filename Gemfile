@@ -1,4 +1,4 @@
-source :rubygems
+source :rubygems # repositório principal de gem.
 gem 'sinatra'
 gem "activerecord" # no rails ela já vem instalada
 gem "sinatra-activerecord" # no rails ela já vem instalada
@@ -10,6 +10,6 @@ group :development do
 end
 
 group :test do
-  gem "rack-test", require: "rack/test" #middleware between http e framework
+  gem "rack-test", require: "rack/test" #(entender pq tem que ter) middleware between http e framework
   gem "rspec"
 end
