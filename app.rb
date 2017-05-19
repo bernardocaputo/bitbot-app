@@ -8,7 +8,7 @@ require './config/database'
 Dir["./app/models/*.rb"].each {|file| require file }
 
 class App < Sinatra::Base # é isso que coloca o sinatra no projeto
-  get '/' do
+  get '/sinatra' do
     'Hello world!'
   end
 end

@@ -9,11 +9,13 @@ services:
   website:
     depends_on:
       - 'postgres'
-    build: . #chama dockerfile
+    build: .
     ports:
       - '9292:9292'
     volumes:
       - '.:/onebitbot'
+    environment:
+      - LANG=C.UTF-8
 
 volumes:
   postgres:
