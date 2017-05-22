@@ -4,6 +4,7 @@ gem "activerecord" # no rails ela ja vem instalada
 gem "sinatra-activerecord" # no rails ela ja vem instalada
 gem 'pg'
 gem 'rake'
+gem 'pg_search'
 
 group :development do
  gem "tux" # eh como se fosse o cmd rails c
