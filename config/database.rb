@@ -13,7 +13,7 @@ configure :development do
  set :database, {
    adapter: 'postgresql',
    encoding: 'utf8',
-   database: 'bitbot_development',
+   database: 'onebitbot_development',
    pool: 5,
    username: 'postgres',
    host: 'postgres'  # host criado pelo docker para network dos containers
