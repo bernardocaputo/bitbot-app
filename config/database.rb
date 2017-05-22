@@ -2,7 +2,7 @@ configure :test do
    set :database, {
      adapter: 'postgresql',
      encoding: 'utf8',
-     database: 'onebitbot_test',
+     database: 'bitbot_test',
      pool: 5,
      username: 'postgres',
      host: 'postgres'  # host criado pelo docker para network dos containers
@@ -13,7 +13,7 @@ configure :development do
  set :database, {
    adapter: 'postgresql',
    encoding: 'utf8',
-   database: 'onebitbot_development',
+   database: 'bitbot_development',
    pool: 5,
    username: 'postgres',
    host: 'postgres'  # host criado pelo docker para network dos containers
@@ -21,7 +21,7 @@ configure :development do
 end
 
 configure :production do
-  db = URI.parse(ENV['DATABASE_URL'] || 'postgres:///postgres/onebitbot_production')
+  db = URI.parse(ENV['DATABASE_URL'] || 'postgres:///postgres/bitbot_production')
 
   set :database, {
     adapter:  db.scheme == 'postgres' ? 'postgresql' : db.scheme,
