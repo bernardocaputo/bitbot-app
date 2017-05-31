@@ -32,6 +32,7 @@ module FaqModule
         response += "\n\n"
       end
       (faqs.count > 0)? response : "Nada encontrado"
+      # if faqs cont > 0 returns response, else -> "Nada encontrado"
     end
   end
 end
