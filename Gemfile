@@ -10,6 +10,7 @@ group :development do
  gem "tux" # eh como se fosse o cmd rails c
 end
 
+
 group :test do
   gem "rack-test", require: "rack/test" #(entender pq tem que ter) middleware between http e framework
   gem "rspec"
